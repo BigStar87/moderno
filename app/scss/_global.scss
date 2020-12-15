@@ -10,6 +10,7 @@ a{
   display: inline-block;
   text-decoration: none;
   color: $text;
+  transition: all 0.3s;
 }
 ul,
 li{
@@ -50,4 +51,9 @@ body{
   font-size: 36px;
   line-height: 60px;
   margin-bottom: 30px;
+}
+
+.rate-star{
+  display: inline-block;
+  margin-right: 13px;
 }

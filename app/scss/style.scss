@@ -47,7 +47,10 @@
     &+li{
       margin-left: 30px;
     }  
-  }  
+  } 
+  a:hover{
+    color: #fff;
+  } 
 }
 
 //поиск
@@ -98,6 +101,7 @@
       }
     }
     button{
+      outline: transparent;
       position: absolute;
       border: none;
       background-color: transparent;
@@ -106,6 +110,8 @@
     }
   }
 }
+
+// продукт
 
 .products{
   padding: 110px 0;
@@ -184,6 +190,7 @@
   &-author{
     display: flex;
     align-items: center;
+    max-width: 245px;
     .avatar{
       width: 30px;
       height: 30px;
@@ -217,4 +224,38 @@
     }
   }
 }
+
+// слайдер
+
+.slider{
+  padding: 123px 0;
+ .slick-dots{
+   text-align: center;
+   margin-top: 50px;
+   li{
+     display: inline-block;
+     margin: 0 3px;
+     &.slick-active{
+       button{
+      background-color: $green;
+       }
+      }
+     button{
+       border: none;
+       font-size: 0;
+       width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      box-shadow: inset 0px 1px 0px 0px rgba(8, 8, 8, 0.25);
+      background-color: #e8e8e8;
+      cursor: pointer;
+      outline: none;
+      }
+   }
+ }
+ &__item-img{
+   outline: transparent;
+ }
+}
+
 
