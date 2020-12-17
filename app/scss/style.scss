@@ -350,3 +350,30 @@
   }
 }
 
+// tutorial
+
+.tutorial{
+  padding: 75px 0 120px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    max-width: 370px;
+    width: 100%;
+    &-img{
+      min-height: 270px;
+      background: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &-title{
+      background-color: #f8f8f8;
+      font-size: 24px;
+      @include f700;
+      color: $bg;
+      text-align: center;
+      padding: 30px 10px;
+    }
+  }
+}
